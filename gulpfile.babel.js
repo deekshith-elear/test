@@ -1,6 +1,4 @@
-/**
- * Created by abhisheks on 6/27/2017.
- */
+
 /* File: gulpfile.babel.js */
 
 // grab our gulp packages
