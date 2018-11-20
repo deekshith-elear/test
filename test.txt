@@ -2,6 +2,3 @@ testing remote repository.
 welcome to brench two.
 hi i am amiya ,
 i ma in your branch
-
-=======
->>>>>>> 2263c6956b53654bb60a33b8c57307078fabb3a0
