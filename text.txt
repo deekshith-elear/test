@@ -1,3 +1,0 @@
-new file added to text.txt
-merged from two and again edited.
-ok.
