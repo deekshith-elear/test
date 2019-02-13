@@ -2,7 +2,7 @@
    # Backup certificates
     sudo cp -r /etc/kubernetes/pki /home/ubuntu/test/kube-backup/
     # Make etcd snapshot
-    sudo docker run --rm -v /var/lib/etcd:/home/ubuntu/test/kube-backup \
+    sudo docker run --rm -v $(pwd)/kube-backup:/var/lib/etcd \
         --network host \
         -v /etc/kubernetes/pki/etcd:/etc/kubernetes/pki/etcd \
         --env ETCDCTL_API=3 \
@@ -11,6 +11,6 @@
         --cacert=/etc/kubernetes/pki/etcd/ca.crt \
         --cert=/etc/kubernetes/pki/etcd/healthcheck-client.crt \
         --key=/etc/kubernetes/pki/etcd/healthcheck-client.key \
-        snapshot save /home/ubuntu/test/kube-backup/etcd-snapshot-latest.db
+        snapshot save /var/lib/etcd/etcd-snapshot-latest.db
     # Backup kubeadm-config
     sudo cp /var/lib/kubelet/config.yaml /home/ubuntu/test/kube-backup
