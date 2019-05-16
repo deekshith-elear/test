@@ -10,8 +10,8 @@
         quay.io/coreos/etcd:v3.3.9 \
         /bin/sh -c "etcdctl snapshot restore '/backup/etcd-snapshot-latest.db' ; mv /default.etcd/member/ /var/lib/etcd/"
     # Restore kubeadm-config
-    sudo mkdir /etc/kubeadm
-    sudo cp backup/kubeadm-config.yaml /etc/kubeadm/
+    #sudo mkdir /etc/kubeadm
+    #sudo cp kube-backup/config.yaml /etc/kubeadm/
     # Initialize the master with backup
     sudo kubeadm init --ignore-preflight-errors=DirAvailable--var-lib-etcd \
         --ignore-preflight-errors=FileContent--proc-sys-net-bridge-bridge-nf-call-iptables \
