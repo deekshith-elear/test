@@ -6,7 +6,7 @@
         --network host \
         -v /etc/kubernetes/pki/etcd:/etc/kubernetes/pki/etcd \
         --env ETCDCTL_API=3 \
-        k8s.gcr.io/etcd:3.2.24 \
+        quay.io/coreos/etcd:v3.3.9 \
         etcdctl --endpoints=https://127.0.0.1:2379 \
         --cacert=/etc/kubernetes/pki/etcd/ca.crt \
         --cert=/etc/kubernetes/pki/etcd/healthcheck-client.crt \
