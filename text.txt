@@ -1,3 +1,4 @@
 new file added to text.txt
 merged from two and again edited.
 ok.
+ changed for release v0.2.2
