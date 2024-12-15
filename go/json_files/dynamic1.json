@@ -1,0 +1,37 @@
+{
+    "version": "v1",
+    "dataItems": [
+      {
+        "data": {
+          "Perc50": 25,
+          "Perc90": 45,
+          "Perc99": 49.5
+        },
+        "unit": "ms",
+        "labels": {
+          "Count": "6",
+          "Resource": "endpointslices",
+          "Scope": "resource",
+          "SlowCount": "0",
+          "Subresource": "",
+          "Verb": "POST"
+        }
+      },
+      {
+        "data": {
+          "Perc50": 25,
+          "Perc90": 45,
+          "Perc99": 49.5
+        },
+        "unit": "ms",
+        "labels": {
+          "Count": "6",
+          "Resource": "endpointslices",
+          "Scope": "resource",
+          "SlowCount": "0",
+          "Subresource": "",
+          "Verb": "POST"
+        }
+      }
+    ]
+}  
